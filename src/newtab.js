@@ -74,7 +74,9 @@ function detectSearchEngine(query) {
         showToolTip(searchEngine);
     }
     else {
-        switch (queryList[0]) {
+        var temp=queryList[0];
+        temp=temp.toLowerCase();
+        switch (temp) {
             case "g":
                 searchEngine = "Google";
                 break;
